@@ -1,0 +1,124 @@
+{
+  "intents": [
+    {
+      "tag": "Greet",
+      "patterns": ["Hello", "Hi there", "Good morning", "Hey"],
+      "responses": ["Hello! How can I assist you?", "Hi! How can I help you today?"]
+    },
+    {
+      "tag": "Goodbye",
+      "patterns": ["Goodbye", "See you later", "Bye bye", "Take care"],
+      "responses": ["Goodbye! Have a great day!", "Farewell! Feel free to return anytime."]
+    },
+    {
+      "tag": "GetCityInformation",
+      "patterns": ["Tell me about the city", "What's special about this city?", "City overview"],
+      "responses": ["Our city is known for its vibrant culture and modern infrastructure.", "Our city offers a blend of history and innovation."]
+    },
+    {
+      "tag": "GetTrafficInformation",
+      "patterns": ["How's the traffic today?", "Traffic update", "Is there heavy traffic?"],
+      "responses": ["Traffic is currently flowing smoothly.", "There are no reported traffic disruptions at the moment."]
+    },
+    {
+      "tag": "GetWeatherInformation",
+      "patterns": ["What's the weather like?", "Give me the weather forecast", "Weather today"],
+      "responses": ["The weather is sunny with a high of 25°C.", "Expect cloudy skies with a chance of rain later."]
+    },
+    {
+      "tag": "GetEmergencyServices",
+      "patterns": ["How do I reach emergency services?", "Emergency hotline", "Call for help"],
+      "responses": ["In case of emergency, please dial 911 immediately.", "The emergency hotline number is 911."]
+    },
+    {
+      "tag": "GetPublicTransportationInformation",
+      "patterns": ["Tell me about public transportation", "How can I use buses and trains?", "Public transport options"],
+      "responses": ["Our city offers an extensive public transportation network including buses and trains.", "You can easily access public transport options throughout the city."]
+    },
+    {
+      "tag": "ReportACrime",
+      "patterns": ["I want to report a crime", "Report suspicious activity", "Crime incident"],
+      "responses": ["If you have witnessed a crime, please contact your local police station or dial the emergency number.", "To report a crime, you should immediately reach out to law enforcement."]
+    },
+    {
+      "tag": "FileAPermitApplication",
+      "patterns": ["How can I apply for a permit?", "Permit application process", "Get a permit"],
+      "responses": ["To apply for a permit, you can visit our official website and follow the instructions on the permits section.", "Permit applications can be submitted online through our government portal."]
+    },
+    {
+      "tag": "PayAParkingTicket",
+      "patterns": ["How do I pay a parking ticket?", "Parking violation fine", "Pay for parking ticket"],
+      "responses": ["You can pay your parking ticket online through our city's payment portal.", "Parking ticket payments can be made at our local government office or online."]
+    },
+    {
+      "tag": "FindALostPet",
+      "patterns": ["I lost my pet", "Help me find my missing pet", "Lost animal"],
+      "responses": ["I'm sorry to hear that. Make sure to check local animal shelters and online lost and found pet forums.", "If your pet is missing, contact local animal shelters and share information about your lost pet."]
+    },
+    {
+      "tag": "GetInformationOnGovernmentServices",
+      "patterns": ["Tell me about government services", "List of public services", "Government assistance"],
+      "responses": ["Our government provides a range of services including healthcare, education, and social support.", "You can find information about various government services on our official website."]
+    },
+    {
+      "tag": "BookAnAppointment",
+      "patterns": ["Can I schedule an appointment?", "Book a meeting", "Set up an appointment"],
+      "responses": ["Certainly! To schedule an appointment, please visit our appointment booking page on our website.", "You can book an appointment online for various government services."]
+    },
+    {
+      "tag": "GetGroceryDelivery",
+      "patterns": ["How can I get groceries delivered?", "Grocery delivery service", "Order groceries online"],
+      "responses": ["You can explore local grocery delivery options or use online grocery platforms for delivery services.", "Several grocery stores offer delivery services for your convenience."]
+    },
+    {
+      "tag": "OrderFoodDelivery",
+      "patterns": ["I want to order food", "Food delivery options", "Get restaurant delivery"],
+      "responses": ["You can order food delivery from a variety of local restaurants through food delivery apps.", "Check out food delivery apps to order your favorite meals from nearby restaurants."]
+    },
+    {
+      "tag": "GetTaxiRide",
+      "patterns": ["Can I get a taxi?", "Book a taxi ride", "Taxi service"],
+      "responses": ["Sure! You can book a taxi through various taxi service providers in the city.", "Taxi services are readily available throughout the city. You can hail one or book in advance."]
+    },
+    {
+      "tag": "FindARestaurant",
+      "patterns": ["Find me a", "Restaurant recommendations", "Good places to eat"],
+      "responses": ["There are many restaurants in the city offering a variety of cuisines. Do you have a specific type of food in mind?", "Sure! What type of cuisine are you interested in? I can recommend some great restaurants."]
+    },
+    {
+      "tag": "GetMovieTimes",
+      "patterns": ["What are the movie showtimes?", "Movie schedule", "Film times"],
+      "responses": ["You can check the local movie theaters' websites or mobile apps for the latest movie showtimes and schedule.", "To find the current movie showtimes, you can visit the websites of nearby movie theaters."]
+    },
+    {
+      "tag": "BookARoom",
+      "patterns": ["I want to book a hotel room", "Hotel room reservation", "Find a place to stay"],
+      "responses": ["Booking a hotel room is easy! You can use various online travel websites or hotel booking platforms to make a reservation.", "To book a hotel room, you can use popular travel websites or contact hotels directly."]
+    },
+    {
+      "tag": "GetFlightInformation",
+      "patterns": ["Tell me about flights", "Flight schedules", "Airport information"],
+      "responses": ["You can find information about flights and schedules by visiting the official website of the local airport.", "For flight information and schedules, you can visit the airport's official website or contact them directly."]
+    },
+    {
+      "tag": "BookAFlight",
+      "patterns": ["I want to book a flight", "Flight booking", "Airline reservations"],
+      "responses": ["To book a flight, you can use various online travel agencies or visit the official websites of airlines.", "Flight bookings can be made through online travel agencies or directly on the websites of airlines."]
+    },
+    {
+      "tag": "BuyTicketsToEvent",
+      "patterns": ["How can I buy tickets to an event?", "Event ticket purchase", "Get entry to an event"],
+      "responses": ["You can purchase tickets to events through official event websites, ticketing platforms, or at the event venue.", "To buy tickets for an event, you can visit the event's official website or check with authorized ticketing outlets."]
+    },
+    {
+      "tag": "GetDirections",
+      "patterns": ["Give me directions", "How do I get to [destination]?", "Navigate to [location]"],
+      "responses": ["Sure! Please provide the address or name of the destination you'd like directions to.", "Of course! I can help you with directions. Please specify the starting and ending points."]
+    },
+    {
+      "tag": "TranslateText",
+      "patterns": ["Translate this text for me", "Language translation", "Translate into [language]"],
+      "responses": ["I can assist you with translation. Please provide the text you'd like to translate and the target language.", "Sure, I can help you with translation. Please share the text and the language you want it translated to."]
+    }
+  ]
+}

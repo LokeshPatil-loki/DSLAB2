@@ -1,9 +1,11 @@
+from os import system
 import random
 import json
 from tkinter.filedialog import Open
 import torch
 from model import NeuralNet
 from nltik_utils import bag_of_words,tokenize
+from speechText import speechToText, textToSpeech
 
 device = torch.device('cuda' if torch.cuda.is_available() else 'cpu')
 
@@ -31,24 +33,43 @@ def predict(sentence):
     
     return model(X)
 
-bot_name = "Sam"
-print("Let's chat! type '!quit' to exit")
+# print(speechToText())
+"a".strip()
+bot_name = "CityGuide"
+print("Let's chat! type '!mic' to input via microphone \n'!repeat' to hear again \n'!quit' to exit")
+response = ""
 while True:
-    sentence = input("You: ")
+    print("You: ",end="")
+    sentence = input()
     if sentence == "!quit":
         break
-    output = predict(sentence)
-    _, predicted = torch.max(output,dim=1)
-    tag = tags[predicted.item()]
+    elif sentence == "!repeat":
+        textToSpeech(response)
+        continue
+    elif sentence == "!mic":
+        sentence = speechToText(bot_name)
+        if sentence == None:
+            response = "Could not understand audio, please try again!"
+        else:
+            print(f"{bot_name}: You said, {sentence}")
+    if sentence != None and len(sentence.strip()) > 0:
+        output = predict(sentence)
+        _, predicted = torch.max(output,dim=1)
+        tag = tags[predicted.item()]
 
-    probs = torch.softmax(output,dim=1)
-    prob = probs[0][predicted.item()]
+        probs = torch.softmax(output,dim=1)
+        prob = probs[0][predicted.item()]
 
-    if prob.item() > 0.75:
-        for intent in intents["intents"]:
-            if tag == intent["tag"]:
-                print(f"{bot_name}:{random.choice(intent['responses'])}")
-    else:
-        print(f"{bot_name}: I do not understand....")
+        response = ""
+        if prob.item() > 0.75:
+            for intent in intents["intents"]:
+                if tag == intent["tag"]:
+                    response = random.choice(intent['responses'])
+        else:
+            response = "I do not understand...."
+
+    print(f"{bot_name}: {response}")
+    textToSpeech(response)
+
 
 

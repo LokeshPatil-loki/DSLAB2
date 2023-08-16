@@ -1,0 +1,193 @@
+{
+  "intents": [
+    {
+      "tag": "greeting",
+      "patterns": ["Hello", "Hi", "Hey", "How's it going?"],
+      "responses": [
+        "Hello! How can I assist you with your insurance needs?",
+        "Hi there! How can I help you today?"
+      ]
+    },
+    {
+      "tag": "goodbye",
+      "patterns": ["Goodbye", "See you later", "Bye", "Talk to you later"],
+      "responses": [
+        "Goodbye! If you have more questions, feel free to ask.",
+        "Bye! Have a great day!"
+      ]
+    },
+    {
+      "tag": "thank_you",
+      "patterns": ["Thank you", "Thanks", "Appreciate it"],
+      "responses": [
+        "You're welcome! If you need anything else, just let me know.",
+        "No problem! If there's anything else I can do for you, please don't hesitate to ask."
+      ]
+    },
+    {
+      "tag": "policy_info",
+      "patterns": ["Tell me about my policy", "What does my policy cover?", "Policy details"],
+      "responses": ["Of course! Could you please provide me with your policy number?"]
+    },
+    {
+      "tag": "policy_number",
+      "patterns": ["My policy number is {policy_number}"],
+      "responses": [
+        "Thank you for providing your policy number. Please give me a moment to retrieve your policy information."
+      ]
+    },
+    {
+      "tag": "claim_process",
+      "patterns": ["How do I file a claim?", "Claim process", "Reporting a claim"],
+      "responses": [
+        "To file a claim, you can visit our website or call our claims department. I can assist you further if you provide me with some details."
+      ]
+    },
+    {
+      "tag": "claim_details",
+      "patterns": [
+        "I need to report a claim",
+        "Claim for {incident_type}",
+        "Claim regarding {incident_type}"
+      ],
+      "responses": ["I'm here to help. Could you please provide more details about the incident?"]
+    },
+    {
+      "tag": "premium_payment",
+      "patterns": ["How can I pay my premium?", "Premium payment options", "Billing"],
+      "responses": [
+        "We offer various premium payment methods, including online payment, auto-debit, and check. Which option would you like to know more about?"
+      ]
+    },
+    {
+      "tag": "contact_agent",
+      "patterns": [
+        "How do I get in touch with my agent?",
+        "Contact my agent",
+        "Agent's contact information"
+      ],
+      "responses": [
+        "You can contact your agent by calling their direct phone number or sending them an email. Do you need their contact details?"
+      ]
+    },
+    {
+      "tag": "eligibility",
+      "patterns": ["Am I eligible for a discount?", "Discount criteria", "Qualify for discounts"],
+      "responses": [
+        "We offer various discounts based on factors such as safe driving record, multiple policies, and more. I can check your eligibility if you provide me with some information."
+      ]
+    },
+    {
+      "tag": "complaint",
+      "patterns": ["I have a complaint", "Unsatisfactory service", "Displeased with claim"],
+      "responses": [
+        "I'm sorry to hear that you're facing an issue. Please let me know the details of your complaint so I can assist you further."
+      ]
+    },
+    {
+      "tag": "default",
+      "patterns": ["", "I don't understand", "Can you repeat?", "Please clarify"],
+      "responses": [
+        "I'm sorry, I couldn't understand that. Could you please rephrase or provide more context?"
+      ]
+    },
+    {
+      "tag": "coverage_types",
+      "patterns": [
+        "What types of coverage do you offer?",
+        "Tell me about coverage options",
+        "Types of insurance plans"
+      ],
+      "responses": [
+        "We provide a range of coverage options including auto, home, health, and more. Which specific type are you interested in learning about?"
+      ]
+    },
+    {
+      "tag": "policy_change",
+      "patterns": [
+        "How can I make changes to my policy?",
+        "Policy modifications",
+        "Update my coverage"
+      ],
+      "responses": [
+        "You can make changes to your policy by contacting our customer service team or logging into your online account. What changes would you like to make?"
+      ]
+    },
+    {
+      "tag": "renewal",
+      "patterns": [
+        "When is my policy up for renewal?",
+        "Policy expiration date",
+        "Renewal process"
+      ],
+      "responses": [
+        "I can help you find out when your policy is up for renewal. Please provide me with your policy number or your name."
+      ]
+    },
+    {
+      "tag": "deductible_info",
+      "patterns": ["What is a deductible?", "Explain deductible", "How does deductible work?"],
+      "responses": [
+        "A deductible is the amount you pay out of pocket before your insurance coverage kicks in. Would you like to know more about how deductible amounts affect your policy?"
+      ]
+    },
+    {
+      "tag": "coverage_limits",
+      "patterns": [
+        "How are coverage limits determined?",
+        "Policy coverage limits",
+        "Limits on insurance"
+      ],
+      "responses": [
+        "Coverage limits vary based on the type of insurance and the coverage options you select. I can help you understand how coverage limits impact your policy if you provide me with some details."
+      ]
+    },
+    {
+      "tag": "premium_increase",
+      "patterns": [
+        "Why did my premium increase?",
+        "Higher premium this year",
+        "Premium cost change"
+      ],
+      "responses": [
+        "Premiums can change due to factors like claims history, policy modifications, or adjustments in risk. I can review your policy to give you more specific information."
+      ]
+    },
+    {
+      "tag": "cancellation",
+      "patterns": ["How do I cancel my policy?", "Cancel insurance", "Termination process"],
+      "responses": [
+        "If you're considering canceling your policy, please contact our customer service team. They can guide you through the cancellation process."
+      ]
+    },
+    {
+      "tag": "coverage_extension",
+      "patterns": [
+        "Can I extend my coverage?",
+        "Extend insurance period",
+        "Coverage duration increase"
+      ],
+      "responses": [
+        "In some cases, coverage extensions may be possible. To explore this option, please provide me with your policy details or the type of coverage you're looking to extend."
+      ]
+    },
+    {
+      "tag": "premium_due",
+      "patterns": ["When is my next premium due?", "Due date for premium", "Payment deadline"],
+      "responses": [
+        "I can help you find out your next premium due date. Please provide me with your policy number or your name."
+      ]
+    },
+    {
+      "tag": "accident_assistance",
+      "patterns": [
+        "I've been in an accident",
+        "Help after an accident",
+        "What to do after a car crash"
+      ],
+      "responses": [
+        "I'm here to assist you. Make sure you and others involved are safe. Please provide me with details about the accident so I can guide you through the next steps."
+      ]
+    }
+  ]
+}

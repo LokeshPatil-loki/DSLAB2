@@ -1,0 +1,143 @@
+{
+  "intents": [
+    {
+      "tag": "greeting",
+      "patterns": ["hi", "hello", "hey", "how are you"],
+      "responses": [
+        "Hello! How can I assist you today?",
+        "Hi there! How can I help you?",
+        "Hey! What can I do for you?"
+      ]
+    },
+    {
+      "tag": "goodbye",
+      "patterns": ["bye", "goodbye", "see you later"],
+      "responses": [
+        "Goodbye! Feel free to come back anytime.",
+        "Take care! Have a great day.",
+        "Bye! Don't hesitate to ask if you need help."
+      ]
+    },
+    {
+      "tag": "thanks",
+      "patterns": ["thank you", "thanks", "appreciate it"],
+      "responses": [
+        "You're welcome! If you have more questions, feel free to ask.",
+        "No problem! If you need further assistance, just let me know.",
+        "Glad I could help! Don't hesitate to reach out if you need anything else."
+      ]
+    },
+    {
+      "tag": "product_info",
+      "patterns": ["Tell me about your products", "What do you offer?", "Product information"],
+      "responses": [
+        "We offer a wide range of products including [mention some products]. Is there a specific product you're interested in?"
+      ]
+    },
+    {
+      "tag": "order_status",
+      "patterns": ["Check my order status", "Where is my order?", "Track my purchase"],
+      "responses": ["Sure, I can help you with that. Please provide me with your order number."]
+    },
+    {
+      "tag": "technical_support",
+      "patterns": [
+        "I'm having technical issues",
+        "My account is not working",
+        "Help with technical problem"
+      ],
+      "responses": [
+        "I'm sorry to hear that. Let's troubleshoot the issue together. Have you tried [suggest a common solution]?",
+        "I'll do my best to assist you. Could you please provide more details about the technical problem you're facing?"
+      ]
+    },
+    {
+      "tag": "pricing",
+      "patterns": ["How much does it cost?", "What's the price?", "Pricing details"],
+      "responses": [
+        "Our pricing varies based on the product. Could you please specify which product you're interested in?"
+      ]
+    },
+    {
+      "tag": "shipping",
+      "patterns": ["Tell me about shipping", "Shipping options", "Delivery process"],
+      "responses": [
+        "We offer various shipping options, including standard and expedited delivery. Shipping costs and times depend on your location and the chosen shipping method."
+      ]
+    },
+    {
+      "tag": "returns",
+      "patterns": ["How do I return a product?", "Return policy", "Refund process"],
+      "responses": [
+        "Our return policy allows returns within 30 days of purchase. To initiate a return, please [provide instructions]."
+      ]
+    },
+    {
+      "tag": "account_help",
+      "patterns": ["I forgot my password", "Change email address", "Update account info"],
+      "responses": [
+        "If you forgot your password, you can reset it by clicking on the 'Forgot Password' link on the login page. For account updates, you can navigate to your account settings and make the necessary changes."
+      ]
+    },
+    {
+      "tag": "order_changes",
+      "patterns": ["Can I change my order?", "Modify order", "Add items to order"],
+      "responses": [
+        "Once an order is placed, changes might not be possible. However, you can contact our support team at [support email/phone] for assistance with order modifications."
+      ]
+    },
+    {
+      "tag": "complaints",
+      "patterns": ["I have a complaint", "Unsatisfactory experience", "Report a problem"],
+      "responses": [
+        "I'm sorry to hear about your experience. Please provide more details about the issue, and we'll do our best to resolve it."
+      ]
+    },
+    {
+      "tag": "availability",
+      "patterns": ["Is this product in stock?", "Product availability", "Available sizes/colors"],
+      "responses": [
+        "To check the availability of a specific product, please provide the product name or SKU, and I'll be happy to assist you."
+      ]
+    },
+    {
+      "tag": "payment",
+      "patterns": ["Accepted payment methods", "Payment options", "Credit card payment"],
+      "responses": [
+        "We accept various payment methods, including credit/debit cards and PayPal. You can choose your preferred payment option during the checkout process."
+      ]
+    },
+    {
+      "tag": "gift_cards",
+      "patterns": ["How do I purchase a gift card?", "Gift card options", "Redeem gift card"],
+      "responses": [
+        "You can purchase gift cards on our website or in-store. To redeem a gift card, enter the unique code during the checkout process."
+      ]
+    },
+    {
+      "tag": "promotions",
+      "patterns": ["Are there any ongoing promotions?", "Discounts and offers", "Promo codes"],
+      "responses": [
+        "We frequently offer promotions and discounts. To stay updated, you can subscribe to our newsletter or follow us on social media."
+      ]
+    },
+    {
+      "tag": "contact_info",
+      "patterns": [
+        "What's your customer service contact?",
+        "How to reach support",
+        "Contact details"
+      ],
+      "responses": [
+        "You can reach our customer support team at [support email/phone]. We're available to assist you during our business hours."
+      ]
+    },
+    {
+      "tag": "feedback",
+      "patterns": ["I have feedback", "Share my thoughts", "Provide a suggestion"],
+      "responses": [
+        "We appreciate your feedback! Please share your thoughts with us by emailing [feedback email] or using the feedback form on our website."
+      ]
+    }
+  ]
+}
